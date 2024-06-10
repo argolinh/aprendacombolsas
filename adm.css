@@ -230,3 +230,55 @@ nav {
         padding: 8px 16px;
     }
 }
+@media (max-width: 300px) {
+
+    header {
+        align-items: flex-start;
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+    header img{
+        width: 20%;
+        padding: 10px;
+        height: 10%;
+        
+    }
+
+    ul {
+        flex-direction: row;
+        gap: 10px;
+        font-size: 8px;
+    }
+
+    .content-container {
+        background-size: cover;
+    }
+
+    .container {
+        margin-top: 70px;
+        padding: 10px;
+    }
+
+    .row {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .box {
+        margin: 5px;
+        min-width: 100%;
+        padding: 10px;
+    }
+
+    .tab-button {
+        padding: 5px 10px;
+        margin: 2px;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}
