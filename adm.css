@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://blog.even3.com.br/wp-content/uploads/2022/07/33-imagens-de-destaque_guestpost-cursos-superiores-1024x683.png');
+    color: #1f1517;
+    font-family: 'Arial', sans-serif;
+}
+
+html {
+    font-family: sans-serif, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+header {
+    width: 100%;
+    color: #fff;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top: 0;
+    background-color: rgb(6, 6, 45);
+    justify-content: space-around;
+    z-index: 1000;
+    position: fixed;
+}
+
+header img {
+    width: 10%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+.content-container{ 
+    background-image: url('https://img.freepik.com/fotos-premium/mao-do-homem-que-pode-controlar-a-tecnologia-da-informacao-ele-pode-segurar-o-mundo-sucesso-empresarial-e-conceito-de-tecnologia-de-internet_112554-883.jpg');
+    background-size: 100%;
+    background-position: center;
+
+}
+.container {
+    width: 100%;
+    margin-top: 100px;
+    padding: 20px;
+    text-align: center;
+}
+
+.course-details {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-image: url();
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+.box {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    min-width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.box:hover {
+    background-color: #1f1517;
+    color: #f4f4f4;
+    box-shadow: 0 0 10px  #970e0ec4;
+    border: 1px solid #970e0ec4;
+}
+
+.description {
+    margin: 20px 0;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.tab-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tab-button:hover {
+    background-color: #0056b3;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.hidden {
+    display: none;
+}
+
+.tab-content:not(.hidden) {
+    display: block;
+}
+
+.slider {
+    margin: 20px 0;
+}
+
+.slide {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #f4f4f4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.btn {
+    width: 30%;
+    font-size: 10;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.more-courses {
+    margin-top: 20px;
+}
+
+.more-courses a {
+    display: block;
+    margin: 10px 0;
+    color: #007bff;
+}
+
+.more-courses a:hover {
+    text-decoration: underline;
+}
+
+
+/* Media Query para dispositivos móveis */
+
+@media (max-width: 406px) {
+
+    header {
+        align-items: flex-start;
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+    header img{
+        width: 20%;
+        padding: 10px;
+        height: 10%;
+        
+    }
+
+    ul {
+        flex-direction: row;
+        gap: 10px;
+        font-size: 8px;
+    }
+
+    .content-container {
+        background-size: cover;
+    }
+
+    .container {
+        margin-top: 70px;
+        padding: 10px;
+    }
+
+    .row {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .box {
+        margin: 5px;
+        min-width: 100%;
+        padding: 10px;
+    }
+
+    .tab-button {
+        padding: 5px 10px;
+        margin: 2px;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}
